@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+:root {
+  --primary: #667eea;
+  --primary-dark: #764ba2;
+  --secondary: #e94560;
+  --dark: #0f0c29;
+  --dark-secondary: #302b63;
+  --light: #f8f9fa;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #f0f2f5;
+}
+
+/* Navbar */
+.navbar-gradient {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-secondary) 50%, #24243e 100%);
+  border-bottom: 2px solid var(--secondary);
+}
+
+.nav-link-custom {
+  position: relative;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  background: rgba(233, 69, 96, 0.2);
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+.nav-link-custom i {
+  margin-right: 6px;
+}
+
+/* Cartes */
+.card-modern {
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-modern:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Boutons */
+.btn-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  border: none;
+  color: white;
+  border-radius: 30px;
+  padding: 0.6rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Avatar */
+.avatar-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+  background: var(--secondary);
+  text-transform: uppercase;
+}
+
+/* Badge de rôle */
+.badge-role {
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.badge-role.coach { background: #28a745; color: white; }
+.badge-role.player { background: #17a2b8; color: white; }
+.badge-role.admin { background: #dc3545; color: white; }
